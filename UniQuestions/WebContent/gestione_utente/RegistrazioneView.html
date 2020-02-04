@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UniQuestions</title>
+<link rel="stylesheet" href="../style.css">
+
+<script>
+	function validateForm() {
+		var nome = document.forms["Registrazione"]["nome"].value;
+		var cognome = document.forms["Registrazione"]["cognome"].value;
+		var username = document.forms["Registrazione"]["username"].value;
+		var matricola = document.forms["Registrazione"]["matricola"].value;
+		var nazionalità = document.forms["Registrazione"]["nazionalita"].value;
+		var email = document.forms["Registrazione"]["email"].value;
+		var password = document.forms["Registrazione"]["password"].value;
+		var confermaPassword = document.forms["Registrazione"]["conferma-password"].value;
+
+		var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+		if (nome == "") {
+			alert("Il campo nome non raggiunge la lunghezza minima");
+			return false;
+		}
+
+		if (nome.length > 20) {
+			alert("Il campo nome raggiunge la lunghezza massima");
+			return false;
+		}
+
+		if (cognome == "") {
+			alert("Il campo cognome non raggiunge la lunghezza minima");
+			return false;
+		}
+
+		if (cognome.length > 30) {
+			alert("Il campo cognome raggiunge la lunghezza massima");
+			return false;
+		}
+
+		if (username == '') {
+			alert("Il campo username non raggiunge la lunghezza minima");
+			return false;
+		}
+
+		if (username.length > 15) {
+			alert("Il campo username raggiunge la lunghezza massima");
+			return false;
+		}
+
+		if (matricola.length < 10 || matricola == '') {
+			alert("Il campo matricola non raggiunge la lunghezza minima");
+			return false;
+		}
+
+		if (matricola.length < 10 || matricola == '') {
+			alert("Il campo matricola non raggiunge la lunghezza minima");
+			return false;
+		}
+
+		if (!matricola.includes("05121")) {
+			alert("Il campo matricola non rispetta il formato");
+			return false;
+		}
+
+		if (matricola.length > 10) {
+			alert("Il campo matricola raggiunge la lunghezza massima");
+			return false;
+		}
+
+		if (nazionalità == '') {
+			alert("Il campo nazionalità non raggiunge la lunghezza minima");
+			return false;
+		}
+
+		if (!email.match(mailformat)) {
+			alert("Hai inserito un email non valida");
+			return false;
+
+		}
+
+		if (password != confermaPassword) {
+			alert("Le passwords inserite non sono uguali.");
+			return false;
+		} else {
+			if (password.length < 6) {
+				alert("Inserire una password di almeno 6 caratteri");
+				return false;
+			}
+		}
+
+	}
+</script>
+
+</head>
+<body>
+
+	<form name="Registrazione" action="../Registrazione" method="post"
+		onsubmit="return validateForm()">
+		<div class="container" align="center">
+			<h1>Registrazione</h1>
+			<p>Compila i campi nella form per creare un account.</p>
+			<hr>
+
+			<label for="nome"><b>Nome</b></label> <input type="text"
+				placeholder="Nome" name="nome"> <label for="cognome"><b>Cognome</b></label>
+			<input type="text" placeholder="Cognome" name="cognome"> <label
+				for="username"><b>Username</b></label> <input type="text"
+				placeholder="Username" name="username"> <label
+				for="matricola"><b>Matricola</b></label> <input type="text"
+				placeholder="Matricola" name="matricola"> <label
+				for="nazionalita"><b>Nazionalità</b></label> <input type="text"
+				placeholder="Nazionalità" name="nazionalita"> <label
+				for="email"><b>Email</b></label> <input type="text"
+				placeholder="Email" name="email"> <label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Password" name="password">
+
+			<label for="conferma-password"><b>Conferma Password</b></label> <input
+				type="password" placeholder="Ripeti Password"
+				name="conferma-password">
+
+			<hr>
+
+			<p>
+				Creando un account tu accetti i nostri <a href="#">Termini &
+					Privacy</a>.
+			</p>
+			<button type="submit" class="registerbtn">Registrati</button>
+
+			<p>
+				Hai già un account? <a href="LoginView.html">Login</a>.
+			</p>
+			<p>
+				<a href="../index.jsp">Indietro</a>
+			</p>
+		</div>
+
+	</form>
+	<div class="container signin">
+		&copy; 2019 UniQuestions Inc. All right reserved<br>
+	</div>
+
+</body>
+</html>

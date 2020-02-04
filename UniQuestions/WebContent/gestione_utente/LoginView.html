@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UniQuestions</title>
+<link rel="stylesheet" href="../style.css">
+
+<script>
+	function validateForm() {
+		var username = document.forms["Login"]["username"].value;
+		var password = document.forms["Login"]["password"].value;
+
+		if (username == '') {
+			alert("Il campo username non raggiunge la lunghezza minima");
+			return false;
+		}
+
+		if (username.length > 15) {
+			alert("Il campo username raggiunge la lunghezza massima");
+			return false;
+		}
+
+		if (password.length < 6) {
+			alert("Inserire una password di almeno 6 caratteri");
+			return false;
+		}
+
+	}
+</script>
+
+</head>
+<body>
+	<form name="Login" action="../Login" method="post" onsubmit="return validateForm()">
+		<div class="container" align="center">
+
+			<h1>Login</h1>
+			<hr>
+
+			<label for="username"><b>Username</b></label> <input type="text"
+				placeholder="Username" name="username"> <label
+				for="password"><b>Password</b></label> <input type="password"
+				placeholder="Password" name="password">
+
+
+
+			<button type="submit" class="registerbtn">Login</button>
+
+			<p>
+				Hai dimenticato la password? <a href="ResetPasswordView.html">Reset
+					Password</a>.
+			</p>
+
+			<p>
+				<a href="../index.jsp">Indietro</a>
+			</p>
+		</div>
+
+		<div class="container signin">
+			&copy; 2019 UniQuestions Inc. All right reserved<br>
+		</div>
+	</form>
+
+</body>
+</html>

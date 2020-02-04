@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/junit-4.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-aop-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-aspects-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-beans-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-context-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-context-indexer-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-context-support-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-core-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-expression-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-instrument-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-jcl-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-jdbc-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-jms-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-messaging-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-orm-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-oxm-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-test-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-tx-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-web-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-webflux-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-webmvc-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anton/OneDrive/Desktop/spring-5.2.3.RELEASE-dist/spring-websocket-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Programmi/TomCat/mysql-connector-java-8.0.19.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
